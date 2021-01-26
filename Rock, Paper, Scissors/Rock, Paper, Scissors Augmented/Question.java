@@ -7,15 +7,9 @@ import javax.swing.JOptionPane;
 
 public class Question {
 
-	static int nQuestions = 0; 
-	static int nCorrect = 0;
-	
 	static String compChoice;
 	protected static final String[] computerChoices = {"Rock", "Paper", "Scissors"};
-	protected static int userAnswer;  
-	
 	static QuestionDialog question; 
-	String correctAnswer;
 	
 	static String ask() {
 		
