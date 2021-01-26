@@ -3,7 +3,7 @@ package git_hub_projects;
 import java.util.Random;
 import javax.swing.JOptionPane;
 
-public class rps_typed {
+public class RPS_Typed {
 
 	protected static String question;
 	public static String input; 
