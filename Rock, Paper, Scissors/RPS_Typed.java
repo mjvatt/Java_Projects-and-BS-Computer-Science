@@ -9,7 +9,6 @@ public class RPS_Typed {
 	public static String input; 
 	protected static String compChoice;
 	protected static final String[] computerChoices = {"rock", "paper", "scissors"};
-	protected static int userAnswer; 
 	
 	public static void main(String[] args) {
 		
