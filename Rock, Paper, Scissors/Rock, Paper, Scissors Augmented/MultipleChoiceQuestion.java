@@ -4,6 +4,7 @@ import javax.swing.*;
 
 public class MultipleChoiceQuestion extends Question {
 
+	// Tell the user to choose rock, paper, or scissors
 	MultipleChoiceQuestion(String query, String a, String b, String c) {
 		
 		super(query);
@@ -19,6 +20,7 @@ public class MultipleChoiceQuestion extends Question {
 		
 	}
 	
+	// Create buttons for the GUI
 	void addButton(JPanel buttons, String label) {
 		
 		JButton button = new JButton(label);
@@ -26,7 +28,5 @@ public class MultipleChoiceQuestion extends Question {
 		buttons.add(button);
 		
 	}
-	
-
 	
 }
