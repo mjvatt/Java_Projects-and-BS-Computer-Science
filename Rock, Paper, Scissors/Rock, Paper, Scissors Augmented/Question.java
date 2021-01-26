@@ -6,11 +6,13 @@ import java.util.Random;
 import javax.swing.JOptionPane;
 
 public class Question {
-
+	
+	// Create necessary variables and options
 	static String compChoice;
 	protected static final String[] computerChoices = {"Rock", "Paper", "Scissors"};
 	static QuestionDialog question; 
 	
+	// Start the game
 	static String ask() {
 		
 		question.setVisible(true);
@@ -18,6 +20,7 @@ public class Question {
 
 	}
 	
+	// Provide message to the user to start play
 	Question(String question){
 		
 		Question.question = new QuestionDialog();
@@ -26,6 +29,7 @@ public class Question {
 		
 	}
 	
+	// Create the dialog box
 	void initQuestionDialog() {
 		
 		question.setModal(true);
@@ -34,6 +38,8 @@ public class Question {
 		
 	}
 	
+	// Start the game, retrieve both user and computer inputs, check for outcomes, 
+	// and ask the user if they want to play again
 	static void check() {
 		
 		String input = ask();
@@ -44,6 +50,7 @@ public class Question {
 		
 	}
 	
+	// This will check for the possible outcomes
 	static void showResults(String input, String compChoice) {
 		
 		if(input.equals(compChoice)) {
@@ -64,6 +71,7 @@ public class Question {
 		
 	}
 	
+	// Randomly return opponent's (computer) choice of rock, paper, or scissor
 	static String getComputerChoice() {
 		
 		Random random = new Random(); 
@@ -73,6 +81,7 @@ public class Question {
 		
 	}
 	
+	// Ask user if they want to play again
 	static void playAgain() {
 		
 		String playAgain;
@@ -84,7 +93,6 @@ public class Question {
 		if(cont == JOptionPane.YES_OPTION) {
 			check();
 		}
-		
 		
 	}
 	
