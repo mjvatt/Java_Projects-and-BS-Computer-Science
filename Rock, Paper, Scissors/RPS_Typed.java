@@ -5,17 +5,20 @@ import javax.swing.JOptionPane;
 
 public class RPS_Typed {
 
+	// Create necessary variables and options
 	protected static String question;
 	public static String input; 
 	protected static String compChoice;
 	protected static final String[] computerChoices = {"rock", "paper", "scissors"};
 	
+	// Play the game
 	public static void main(String[] args) {
 		
 		getUserInput();
 		
 	}
 	
+	// Get user input
 	protected static void getUserInput() {
 
 		question = "Enter rock, paper, or scissors: ";
@@ -25,6 +28,7 @@ public class RPS_Typed {
 		
 	}
 	
+	// Randomly return opponent's (computer) choice of rock, paper, or scissor
 	protected static void getComputerChoice() {
 		
 		Random random = new Random(); 
@@ -35,6 +39,7 @@ public class RPS_Typed {
 		
 	}
 	
+	// Evaluate the outcome
 	protected static void check() {
 		
 		if(input.equals(compChoice)) {
