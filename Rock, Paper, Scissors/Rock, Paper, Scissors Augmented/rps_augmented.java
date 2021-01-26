@@ -1,6 +1,6 @@
 package git_hub_projects;
 
-public class rps_augmented {
+public class RPS_Augmented {
 	
 	public static void main(String[] args) {
 		
