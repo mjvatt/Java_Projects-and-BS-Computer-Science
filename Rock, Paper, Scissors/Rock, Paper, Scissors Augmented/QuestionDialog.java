@@ -6,6 +6,7 @@ import javax.swing.*;
 @SuppressWarnings("serial")
 public class QuestionDialog extends JDialog implements ActionListener {
 
+	// Create variable to store user input
 	String answer;
 
 	public void actionPerformed(ActionEvent e) {
@@ -14,7 +15,5 @@ public class QuestionDialog extends JDialog implements ActionListener {
 		dispose();
 		
 	}
-	
-	
 	
 }
