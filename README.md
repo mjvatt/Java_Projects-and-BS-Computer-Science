@@ -1,4 +1,4 @@
-# Java
+# Java and Bachelor of Science in Computer Science
 
 ## Projects
 
