@@ -1,3 +1,5 @@
+# Java
+
 ## Projects
 
 This repo contains most of the scripts I created during my academic career of my Bachelors in Computer Science. 
